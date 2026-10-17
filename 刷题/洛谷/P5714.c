@@ -15,7 +15,7 @@ int main(void)
     } else if(BMI >= 18.5 &&BMI < 24){
         printf("Normal");
     } else if (BMI >= 24){
-        printf("%f\n", BMI);
+        printf("%g\n", BMI);
         printf("Overweight");
     }
     
