@@ -7,18 +7,20 @@ int main(void){
     int c;
 
     cin >> a >> b >> c;
-    if(a > b > c){
-        cout<< a << b << c;
-    }else if(a > c > b){
-        cout<<a << c << b;
-    }else if(b > a > c){
-        cout<<b << a << c;
-    }else if(b > c > a){
-        cout<<b << c << a;
-    }else if(c > a > b){
-        cout<<c << a << b;
-    }else if(c > b > a){
-        cout<<c << b << a;
+    if(a > b && b > c){
+        cout<< c << " " << b << " " << a;
+    }else if(a > c && c > b){
+        cout<<b << " "<< c << " "<< a;
+    }else if(b > a && a > c){
+        cout<<c << " " << a  << " " << b;
+    }else if(b > c && c > a){
+        cout<<a << " " << c << " " << b;
+    }else if(c > a && a > b){
+        cout<<b << " " << a << " " << c;
+    }else if(c > b && b > a){
+        cout<< a << " " << b << " " << c;
+    }else{
+        cout<< a << " " << b << " " << c;
     }
 
     return 0;
